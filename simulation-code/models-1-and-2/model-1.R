@@ -34,7 +34,7 @@ simulate = function(
   if (pretraining) {
     dw = np$dot(t(input), response)
     weights = weights + eta*dw
-    weights %<>% apply(2, function(x) 148.7*x/sum(x))
+    weights %<>% apply(2, function(x) 149.1*x/sum(x))
   }
   
   # Save trained weights
